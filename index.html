@@ -3,214 +3,206 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dawud Dukes | Portfolio</title>
+  <title>Dawud Dukes | IT Support & IAM Portfolio</title>
+  <meta name="description" content="Dawud Dukes — IT Support / Help Desk / IAM-focused portfolio. Active Directory homelab, troubleshooting demos, and incident documentation." />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Small, recruiter-friendly improvements that don't fight your main CSS -->
+  <style>
+    /* Media consistency (thumbnail + PDF preview) */
+    .card-footer .media-link{ display:block; width:100%; }
+    .card-footer .media{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+      border: 1px solid rgba(0,0,0,0.06);
+      cursor:pointer;
+      margin-bottom: 0.75rem;
+    }
+    /* Make card footers read cleanly (thumb then actions) */
+    .card-footer{ flex-direction:column; align-items:flex-start; }
+    /* Keep primary CTAs aligned */
+    .cta-row{ align-items:center; }
+  </style>
 </head>
+
 <body>
+<header class="site-header">
+  <div class="hero" id="top">
+    <h1>Dawud Dukes</h1>
 
-  <header class="site-header">
-    <!-- <nav class="nav">
-      <a class="logo" href="#top">Dawud Dukes</a>
-      <div class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav> -->
+    <!-- Tight, role-aligned headline -->
+    <p class="subtitle">IT Support • Help Desk • Identity & Access Management (IAM)</p>
 
-    <div class="hero" id="top">
-      <h1>Dawud Dukes</h1>
-      <p class="subtitle">IT Specialist | Computer Science Graduate Student</p>
-      <p class="tagline">
-        Hands-on experience supporting Windows-based enterprise environments, with strengths in
-        Active Directory administration, access control, and troubleshooting domain-related IT
-        support issues.
-      </p>
+    <!-- Recruiter-first summary: what you do + what you bring -->
+    <p class="tagline">
+      IT support and Active Directory–focused work with a strong, repeatable troubleshooting process.
+      Comfortable resolving authentication issues (lockouts, password resets), validating access, and documenting fixes clearly.
+    </p>
 
-      <div class="cta-row">
-        <a class="btn primary" href="#projects">View Projects</a>
-        <a class="btn" href="DawudDResume.pdf" target="_blank" rel="noreferrer">Resume</a>
-        <a class="btn" href="https://www.linkedin.com/in/dawud-dukes-220b632b3/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a class="btn" href="https://github.com/dawuddukes01" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn" href="#contact">Contact</a>
-      </div>
+    <div class="cta-row" aria-label="Primary links">
+      <a class="btn primary" href="#projects">View Projects</a>
+      <a class="btn" href="DawudDResume.pdf" target="_blank" rel="noreferrer">Download Resume (PDF)</a>
+      <a class="btn" href="#contact">Contact</a>
+      <a class="btn" href="https://www.linkedin.com/in/dawud-dukes-220b632b3/" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="btn" href="https://github.com/dawuddukes01" target="_blank" rel="noreferrer">GitHub</a>
     </div>
-  </header>
+  </div>
+</header>
 
-  <main class="container">
+<main class="container">
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <p class="section-desc">
-        Hands-on projects demonstrating IT support, Active Directory administration,
-        and structured troubleshooting.
-      </p>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <p class="section-desc">
+      Practical projects that mirror real IT support work: account access issues, policy checks, and clean documentation.
+    </p>
 
-      <div class="grid">
+    <div class="grid">
 
-        
-        <!-- ACTIVE DIRECTORY PROJECT -->
-        <article class="card">
-          <div class="card-header">
-            <h3>Active Directory Homelab</h3>
-            <p class="meta">Windows Server • AD DS • Group Policy • Windows Client</p>
-          </div>
+      <!-- ACTIVE DIRECTORY PROJECT -->
+      <article class="card">
+        <div class="card-header">
+          <h3>Active Directory Homelab</h3>
+          <p class="meta">Windows Server • AD DS • Group Policy • Windows 10/11 Client</p>
+        </div>
 
-          <ul class="bullets">
-            <li>Administered Active Directory users, security groups, computer accounts, and OUs in a Windows Server domain environment</li>
-            <li>Resolved domain authentication issues (lockouts, password resets) by analyzing account status, group membership, and policy settings, restoring user access without escalation</li>
-            <li>Applied least-privilege access and supported Windows 10/11 domain-joined systems in a lab-based enterprise environment</li>
-          </ul>
+        <!-- Tightened bullets: action + scope + outcome language -->
+        <ul class="bullets">
+          <li>Built and administered a Windows Server domain lab: users, security groups, computer accounts, and OUs in ADUC.</li>
+          <li>Resolved authentication and access issues (lockouts, password resets) by validating account status, group membership, and policy settings—restoring access without escalation.</li>
+          <li>Applied least-privilege access patterns and supported domain-joined endpoints through repeatable checks and documentation.</li>
+        </ul>
 
-          <div class="card-footer">
-            <a class="link" href="#" target="_blank" rel="noreferrer">GitHub (Lab Notes)</a>
-            
-            <a href="https://www.youtube.com/watch?v=VC_9gqiVzO8" target="_blank">
-              <img
-                src="https://img.youtube.com/vi/VC_9gqiVzO8/0.jpg"
-                alt="Watch on YouTube"
-                style="max-width:100%; cursor:pointer;">
+        <div class="card-footer">
+          <a class="media-link" href="https://www.youtube.com/watch?v=VC_9gqiVzO8" target="_blank" rel="noreferrer" aria-label="Open Active Directory demo on YouTube">
+            <img
+              class="media"
+              src="https://img.youtube.com/vi/VC_9gqiVzO8/0.jpg"
+              alt="Active Directory homelab demo thumbnail">
+          </a>
+
+          <div class="cta-row" aria-label="Project actions">
+            <a class="link" href="https://www.youtube.com/watch?v=VC_9gqiVzO8" target="_blank" rel="noreferrer">
+              ▶ Watch Demo (YouTube)
             </a>
-
-
+            <a class="link" href="https://github.com/dawuddukes01" target="_blank" rel="noreferrer">
+              View GitHub
+            </a>
           </div>
-        </article>
+        </div>
+      </article>
 
-        <!-- HELP DESK SIMULATION -->
-        <article class="card">
-          <div class="card-header">
-            <h3>Help Desk Simulation</h3>
-            <p class="meta">IT Support • Ticketing • Documentation</p>
-          </div>
+      <!-- HELP DESK SIMULATION -->
+      <article class="card">
+        <div class="card-header">
+          <h3>Help Desk Simulation</h3>
+          <p class="meta">Troubleshooting • Ticket Notes • Incident Documentation</p>
+        </div>
 
-          <ul class="bullets">
-            <li>Simulated real-world help desk tickets involving login failures, account lockouts, and password-related issues</li>
-            <li>Applied a structured troubleshooting process to identify root causes, implement fixes, and verify resolution</li>
-            <li>Documented incidents using ticket-style work notes and step-by-step procedures</li>
-          </ul>
+        <ul class="bullets">
+          <li>Simulated common help desk scenarios: login failures, account lockouts, and password-related access problems.</li>
+          <li>Used a structured workflow (identify symptoms → isolate root cause → implement fix → verify) to drive consistent resolutions.</li>
+          <li>Produced ticket-style documentation with clear steps, validation checks, and close-out notes for knowledge reuse.</li>
+        </ul>
 
-          <div class="card-footer">
+        <div class="card-footer">
+          <a class="media-link" href="incorrect_password.pdf" target="_blank" rel="noreferrer" aria-label="Open incident walkthrough PDF">
+            <img
+              class="media"
+              src="password_preview.png"
+              alt="Incident walkthrough PDF preview">
+          </a>
+
+          <div class="cta-row" aria-label="Project actions">
             <a class="link" href="incorrect_password.pdf" target="_blank" rel="noreferrer">
               View Incident Walkthrough (PDF)
             </a>
           </div>
-        </article>
+        </div>
+      </article>
 
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- What I bring -->
-    <section id="value" class="section">
-      <h2>What I Bring</h2>
+  <!-- WHAT I BRING -->
+  <section id="value" class="section">
+    <h2>What I Bring</h2>
+    <ul class="bullets">
+      <li><strong>Structured Troubleshooting:</strong> A repeatable process that reduces guesswork and speeds up resolution.</li>
+      <li><strong>Identity & Access Focus:</strong> Experience handling authentication issues, access validation, and least-privilege thinking in AD environments.</li>
+      <li><strong>Strong Documentation:</strong> Ticket-style notes, step-by-step procedures, and verification steps that support future resolution.</li>
+      <li><strong>User-Ready Communication:</strong> Clear, professional updates for non-technical users and stakeholders.</li>
+      <li><strong>Hands-On Growth:</strong> Consistently building labs, demos, and write-ups that mirror real support work.</li>
+    </ul>
+  </section>
 
-        <ul class="bullets">
-            <li>
-            <strong>Structured Troubleshooting:</strong>
-            I approach issues methodically by identifying symptoms, isolating root causes, applying fixes,
-            and verifying resolution instead of guessing.
-            </li>
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <div class="pill-row" aria-label="Certifications">
+      <span class="pill">CompTIA A+</span>
+      <span class="pill">ITIL Foundations</span>
+      <span class="pill">Linux Essentials</span>
+      <span class="pill">Google IT Support</span>
+    </div>
+  </section>
 
-            <li>
-            <strong>Identity & Access Management Focus:</strong>
-            Hands-on experience resolving authentication issues such as account lockouts, password resets,
-            and access problems in Active Directory environments.
-            </li>
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="pill-row" aria-label="Skills">
+      <span class="pill">Active Directory (ADUC)</span>
+      <span class="pill">Account Lockouts & Password Resets</span>
+      <span class="pill">Access Control / Least Privilege</span>
+      <span class="pill">Windows Server</span>
+      <span class="pill">Windows 10/11 Support</span>
+      <span class="pill">DNS / DHCP / TCP/IP</span>
+      <span class="pill">Troubleshooting & Root Cause</span>
+      <span class="pill">Documentation</span>
+    </div>
+  </section>
 
-            <li>
-            <strong>Clear Documentation:</strong>
-            I document incidents and resolutions using ticket-style notes and step-by-step procedures to
-            prevent repeat issues and support knowledge sharing.
-            </li>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About & Career Focus</h2>
+    <p>
+      I’m an IT Specialist and Computer Science graduate student focused on supporting Windows-based enterprise environments.
+      I’m targeting IT Support, Help Desk, or IAM-aligned roles where I can contribute through structured troubleshooting,
+      Active Directory administration, and clear documentation.
+    </p>
+  </section>
 
-            <li>
-            <strong>User-Focused Communication:</strong>
-            I communicate clearly with non-technical users, gathering accurate information and explaining
-            solutions in a professional and approachable manner.
-            </li>
-
-            <li>
-            <strong>Growth-Oriented Mindset:</strong>
-            I actively build and expand labs, simulations, and documentation to strengthen my IT support
-            skills and prepare for real-world environments.
-            </li>
-            <li>
-            <strong>Repeatable Process:</strong>
-            Clarify user impact, investigate using logs and policy checks, apply least-privilege fixes,
-            verify resolution, and document outcomes to prevent repeat issues.
-            </li>
-        </ul>
-        </section>
-
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="section">
-     <h2>Certifications</h2>
-      <div class="pill-row">
-        <span class="pill">CompTIA A+</span>
-        <span class="pill">ITIL Foundations</span>
-        <span class="pill">Linux Essentials</span>
-        <span class="pill">Google IT Support</span>
-      </div>
-    </section>
-
-
-
-    <!-- SKILLS -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="pill-row">
-        <span class="pill">Active Directory (Users, Groups, OUs)</span>
-        <span class="pill">Authentication & Access Control</span>
-        <span class="pill">Windows Server</span>
-        <span class="pill">Windows Client Administration</span>
-        <span class="pill">DNS / DHCP / TCP-IP</span>
-        <span class="pill">Technical Troubleshooting</span>
-        <span class="pill">Documentation</span>
-        <span class="pill">Python</span>
-        <span class="pill">Data Analysis</span>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <p>
-        I’m an IT Specialist and Computer Science graduate student focused on supporting
-        Windows-based enterprise environments. I enjoy troubleshooting authentication and
-        access issues, working with Active Directory, and documenting clear, repeatable
-        solutions in IT support roles.
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-card">
+      <p><strong>Email:</strong> <a href="mailto:dawud.dukesnp@outlook.com">dawud.dukesnp@outlook.com</a></p>
+      <p><strong>LinkedIn:</strong>
+        <a href="https://www.linkedin.com/in/dawud-dukes-220b632b3/" target="_blank" rel="noreferrer">
+          linkedin.com/in/dawud-dukes-220b632b3
+        </a>
       </p>
-    </section>
+      <p><strong>GitHub:</strong>
+        <a href="https://github.com/dawuddukes01" target="_blank" rel="noreferrer">
+          github.com/dawuddukes01
+        </a>
+      </p>
+    </div>
+  </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="contact-card">
-        <p><strong>Email:</strong> <a href="mailto:dawud.dukesnp@outlook.com">dawud.dukesnp@outlook.com</a></p>
-        <p><strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/dawud-dukes-220b632b3/" target="_blank" rel="noreferrer">
-            linkedin.com/in/dawud-dukes-220b632b3
-          </a>
-        </p>
-        <p><strong>GitHub:</strong>
-          <a href="https://github.com/dawuddukes01" target="_blank" rel="noreferrer">
-            github.com/dawuddukes01
-          </a>
-        </p>
-      </div>
-    </section>
+</main>
 
-  </main>
+<footer class="footer">
+  <p>© <span id="year"></span> Dawud Dukes</p>
+</footer>
 
-  <footer class="footer">
-    <p>© <span id="year"></span> Dawud Dukes</p>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
